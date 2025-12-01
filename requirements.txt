@@ -1,0 +1,14 @@
+langchain
+langgraph
+autogen
+crewai
+llama-index
+faiss-cpu
+sentence-transformers
+rank_bm25
+tqdm
+numpy
+pandas
+python-dotenv
+datasets
+huggingface_hub
