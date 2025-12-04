@@ -1,9 +1,6 @@
 # LangChain RAG orchestrator with Groq - Enhanced with task-specific methods
 
-from langchain.prompts import ChatPromptTemplate
-from langchain.tools import tool
-from langchain.agents import AgentExecutor, create_tool_calling_agent
-from langchain_core.prompts import MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate
 from rag.indexer import FaissIndexer
 from typing import List, Optional
 from orchestrators.base_agent import BaseLegalAgent

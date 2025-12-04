@@ -6,11 +6,11 @@ from orchestrators.base_agent import BaseLegalAgent
 
 try:
     from langchain_groq import ChatGroq
-    from langchain.prompts import ChatPromptTemplate
+    from langchain_core.prompts import ChatPromptTemplate
 except ImportError:
     raise ImportError(
-        "langchain-groq and langchain are required for baseline agent. "
-        "Install with: pip install langchain langchain-groq"
+        "langchain-groq and langchain-core are required for baseline agent. "
+        "Install with: pip install langchain-groq langchain-core"
     )
 
 
