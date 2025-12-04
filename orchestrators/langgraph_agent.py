@@ -2,11 +2,11 @@
 
 from langgraph.graph import StateGraph
 from rag.indexer import FaissIndexer
-from langchain.chat_models import ChatOpenAI
+from langchain_groq import ChatGroq
 
 class LangGraphLegalAgent:
-    def __init__(self, indexer: FaissIndexer):
-        self.llm = ChatOpenAI(model="gpt-4o-mini")
+    def __init__(self, indexer: FaissIndexer, model_name: str = "llama-3.3-70b-versatile"):
+        self.llm = ChatGroq(model=model_name, temperature=0)
         self.indexer = indexer
         graph = StateGraph()
 

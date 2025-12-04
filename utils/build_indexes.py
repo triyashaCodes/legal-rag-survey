@@ -35,7 +35,7 @@ def load_chunks_from_jsonl(jsonl_path):
                     chunks.append(text)
     return chunks
 
-def build_index(dataset_name, chunks_jsonl_path, batch_size=16):
+def build_index(dataset_name, chunks_jsonl_path, batch_size=128):
     """Build a FAISS index for a dataset"""
     print(f"\n=== Building index for {dataset_name} ===")
     
